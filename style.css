@@ -19,7 +19,7 @@ body {
     max-width: 600px;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    width: 500px;
+    width: 100%;
     padding-bottom: 50px;
 }
 
@@ -122,3 +122,4 @@ ul li.check::before {
   background-color: #707070;
   transform: scale(1.2);
 }
+
