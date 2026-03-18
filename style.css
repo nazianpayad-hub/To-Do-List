@@ -9,7 +9,6 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     padding: 60px 20px;
     background-image: url("images/paperBG.jpg");
 }
@@ -19,8 +18,8 @@ body {
     max-width: 600px;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    width: 90%;
-    padding-bottom: 50px;
+    width: 100%;
+    padding: 50px;
 }
 
 h1 {
@@ -113,58 +112,66 @@ ul li.check::before {
 }
 
 .delete-btn {
-  width: 40px;
-  cursor: pointer;
-  margin-right: 40px;
-  border-radius: 10px;
-  padding: 5px;
+    width: 40px;
+    cursor: pointer;
+    margin-right: 40px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .delete-btn:hover {
-  background-color: #707070;
-  transform: scale(1.2);
+    background-color: #707070;
+    transform: scale(1.2);
 }
 
 /* mobile */
 @media (max-width: 600px) {
+    body {
+        padding: 20px 10px; /* reduce top padding */
+        align-items: flex-start; /* push content to top */
+    }
 
-  h1 {
-    font-size: 28px;
-    text-align: center;
-  }
+    .container {
+        padding: 20px; /* reduce container padding */
+    }
 
-  p {
-    font-size: 16px;
-    text-align: center;
-  }
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
 
-  .input-group {
-    margin: 15px;
-  }
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
 
-  .input-group input {
-    width: 100%;
-  }
+    .input-group {
+        margin: 15px;
+    }
 
-  button {
-    padding: 10px 12px;
-    font-size: 14px;
-  }
+    .input-group input {
+        width: 100%;
+    }
 
-  ul li {
-    padding: 12px 8px 12px 50px;
-    font-size: 14px;
-  }
+    button {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
 
-  ul li::before {
-    height: 20px;
-    width: 20px;
-    left: 15px;
-    top: 12px;
-  }
+    ul li {
+        padding: 12px 8px 12px 50px;
+        font-size: 14px;
+    }
 
-  .delete-btn {
-    width: 30px;
-    margin-right: 10px;
-  }
+    ul li::before {
+        height: 20px;
+        width: 20px;
+        left: 15px;
+        top: 12px;
+    }
+
+    .delete-btn {
+        width: 30px;
+        margin-right: 10px;
+    }
 }
