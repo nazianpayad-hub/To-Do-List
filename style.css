@@ -60,7 +60,6 @@ button {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    flex-shrink: 0;
 }
 
 button:hover {
@@ -127,12 +126,12 @@ ul li.check::before {
 /* mobile */
 @media (max-width: 600px) {
     body {
-        padding: 20px 10px; /* reduce top padding */
-        align-items: flex-start; /* push content to top */
+        padding: 20px 10px;
+        align-items: flex-start; 
     }
 
     .container {
-        padding: 20px; /* reduce container padding */
+        padding: 20px;
     }
 
     h1 {
@@ -154,7 +153,7 @@ ul li.check::before {
     }
 
     button {
-        padding: 10px 12px;
+        padding: 15px 12px;
         font-size: 14px;
     }
 
@@ -167,7 +166,7 @@ ul li.check::before {
         height: 20px;
         width: 20px;
         left: 15px;
-        top: 12px;
+        top: 15px;
     }
 
     .delete-btn {
