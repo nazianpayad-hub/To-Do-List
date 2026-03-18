@@ -1,6 +1,7 @@
 const inputList = document.getElementById('input-list');
 const taskList = document.getElementById('task-list');
 
+/* add task and delete button */
 function add() {
     if(inputList.value === '') {
         alert('Write Something!');
@@ -15,9 +16,10 @@ function add() {
         li.appendChild(del);
         saveList();
     }
-    inputList.value = '';
+    inputList.value = ''; /* Refresh input box */
 }
 
+/* Done and remove task */
 taskList.addEventListener('click', function(e) {
     if (e.target.tagName === 'LI') {
         e.target.classList.toggle('check');
@@ -29,6 +31,7 @@ taskList.addEventListener('click', function(e) {
     }
 }, false);
 
+/* save and show data/list of tasks */
 function saveList() {
     localStorage.setItem('dataList', taskList.innerHTML);
 }
