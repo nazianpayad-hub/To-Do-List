@@ -38,13 +38,14 @@ p {
 
 .input-group {
     display: flex;
-    justify-content: space-between;
-    margin: 30px;
+    gap: 8px;
+    margin: 20px;
     align-items: center;
 }
 
 .input-group input {
     flex: 1;
+    min-width: 0;
     padding: 14px 18px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -60,6 +61,7 @@ button {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 button:hover {
@@ -123,3 +125,46 @@ ul li.check::before {
   transform: scale(1.2);
 }
 
+/* mobile */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .input-group {
+    margin: 15px;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  button {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  ul li {
+    padding: 12px 8px 12px 50px;
+    font-size: 14px;
+  }
+
+  ul li::before {
+    height: 20px;
+    width: 20px;
+    left: 15px;
+    top: 12px;
+  }
+
+  .delete-btn {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
